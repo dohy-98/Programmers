@@ -1,0 +1,21 @@
+N = int(input().strip())
+for i in range(N) :
+    C = int(input().strip())
+    a = 0
+    b = 0
+    c = 0
+    d = 0
+    while C != 0 :
+        if C >= 25 :
+            a = C//25
+            C = C-25*(C//25)
+        elif C >= 10 :
+            b = C//10
+            C = C-10*(C//10)
+        elif C >= 5 :
+            c = C//5
+            C = C-5*(C//5)
+        elif C >= 1:
+            d = C
+            C = C - C//1
+    print(a,b,c,d,end = ' ')
